@@ -5,7 +5,7 @@ This thesis provides an overview of adaptive stochastic gradient descent methods
 
 论文介绍了一系列用于求解大规模优化问题的自适应随机梯度方法，并就其产生背景、理论性质和实验表现几个方面详细展开。首先，论文通过介绍机器学习中的结构风险模型，引入了一类大规模优化问题，并指出传统的梯度下降法（GD）和随机梯度下降法（SGD）在处理此类问题时的不足之处。随后，论文引入AdaGrad算法，介绍其迭代格式与动机，并给出AdaGrad在凸优化问题中 $O (1/\sqrt{T})$ 的收敛速率、光滑非凸优化问题中 $O (\ln T/\sqrt{T})$ 的收敛速率。论文回顾了AdaGrad及其标量形式AdaGrad-Norm的次线性遗憾 $R(T)=O(\sqrt{T})$ ，并将其与SGD作比较。随后，论文指出AdaGrad具有步长过度衰减等缺陷，并引入RMSProp, AdaDelta, Adam等改进算法。最后，论文利用上述算法对Logistic回归、支持向量机、多层感知机三种模型进行训练，验证了自适应随机梯度方法在稀疏数据集上的优越表现，以及在各类优化问题上一致的优秀性能。
 
-部分结果展示：
+部分结果展示（矢量图见image文件夹）：
 
 <img width="1446" height="1182" alt="image" src="https://github.com/user-attachments/assets/f34ac3dc-b351-4356-9bc0-4e4a052990d0" />
 
